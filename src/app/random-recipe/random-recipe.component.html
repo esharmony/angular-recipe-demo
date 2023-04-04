@@ -1,0 +1,16 @@
+<aside>
+  <h3>A selected recipe</h3>
+  <br />
+  <article>
+    <section>
+      <h4>{{ recipe?.strMeal }}</h4>
+      <p>
+        {{ recipe?.strInstructions || "" | truncate : 20 : "...." }}
+      </p>
+      <a routerLink="/recipe/{{ recipe?.idMeal }}"> View recipe</a>
+    </section>
+    <div style="background-image: url('{{ recipe?.strMealThumb }}')"></div>
+    <br />
+    <app-error></app-error>
+  </article>
+</aside>

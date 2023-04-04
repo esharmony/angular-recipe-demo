@@ -1,0 +1,24 @@
+nav {
+  padding: 16px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+}
+
+ul {
+  list-style: none;
+}
+
+span {
+  padding: 0 8px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a.selected {
+  text-decoration: underline;
+}

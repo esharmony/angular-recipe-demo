@@ -1,0 +1,8 @@
+<app-recipe-navigation></app-recipe-navigation>
+<ul class="browse-result">
+  <li *ngFor="let recipe of recipes$ | async">
+    <a routerLink="/recipe/{{ recipe.idMeal }}">
+      {{ recipe.strMeal }}
+    </a>
+  </li>
+</ul>

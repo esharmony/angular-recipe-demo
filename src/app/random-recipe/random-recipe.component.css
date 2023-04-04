@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+article {
+  background-color: #d7eff9;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  min-width: 250px;
+  flex-wrap: wrap-reverse;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+h4 {
+  padding: 16px;
+  font-size: large;
+}
+
+p {
+  padding: 0 16px 16px;
+}
+
+div {
+  flex: 1;
+  height: 200px;
+  width: 200px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+a {
+  color: black;
+  padding: 0 16px 16px;
+  display: block;
+}

@@ -1,0 +1,27 @@
+<nav *ngIf="getFirstPath() !== 'recipe' && getFirstPath() !== 'browse'">
+  <div id="search">
+    <app-search></app-search>
+  </div>
+  <a class="mainButton" routerLink="/browse/a">Browse recipes</a>
+</nav>
+
+<nav *ngIf="getFirstPath() === 'recipe'">
+  <div id="back">
+    <a class="mainButton" (click)="back()">Back</a>
+  </div>
+</nav>
+
+<nav *ngIf="getFirstPath() === 'browse'">
+  <div id="letters">
+    <ul>
+      <li *ngFor="let letter of alphabet">
+        <a
+          routerLink="/browse/{{ letter }}"
+          [class.selected]="getSecondPath() === letter"
+          >{{ letter }}</a
+        >
+      </li>
+    </ul>
+  </div>
+  <a class="mainButton" (click)="back()">Back</a>
+</nav>

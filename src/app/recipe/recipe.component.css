@@ -1,0 +1,49 @@
+div {
+  flex: 1;
+  height: 200px;
+  width: 200px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+article#ingredients {
+  flex: 1;
+  margin-right: 32px;
+  min-width: 250px;
+}
+article#instructions {
+  background-color: #d7eff9;
+  width: 100%;
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  min-width: 250px;
+  flex-wrap: wrap-reverse;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px;
+  flex-wrap: wrap-reverse;
+}
+p {
+  white-space: pre-line;
+}
+
+h3 {
+  margin: 32px;
+  font-size: x-large;
+}
+
+h4 {
+  margin-top: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-top: 16px;
+}

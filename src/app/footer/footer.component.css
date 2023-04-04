@@ -1,0 +1,20 @@
+:host {
+  margin-top: auto;
+  width: 100%;
+}
+
+footer {
+  font-size: large;
+  font-weight: bold;
+}
+
+footer {
+  background: skyblue;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  color: white;
+  width: 100%;
+  padding: 1em 0;
+  border-top: 2px solid white;
+}

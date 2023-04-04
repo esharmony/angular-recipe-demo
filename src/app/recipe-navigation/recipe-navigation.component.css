@@ -1,0 +1,86 @@
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: grey;
+  height: 48px;
+  align-items: center;
+}
+
+div#search {
+  position: relative;
+  flex: 1;
+  margin: 0 16px;
+}
+
+div#back {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  margin: 0 8px;
+}
+
+input {
+  height: 32px;
+}
+
+input[type="button"] {
+  padding: 4px 8px;
+}
+
+input[type="search"] {
+  width: 100%;
+}
+
+a.mainButton {
+  color: white;
+  background-color: #444;
+  border-radius: 25px;
+  padding: 4px 8px;
+  font-size: medium;
+  margin-right: 16px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: black;
+}
+
+::placeholder {
+  text-indent: 8px;
+}
+
+div#letters {
+  overflow: hidden;
+  overflow-x: scroll;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin: 0 16px;
+}
+
+div#letters ul {
+  list-style: none;
+  margin: 0 16px;
+}
+
+div#letters ul li {
+  display: inline;
+}
+
+div#letters ul li a {
+  text-transform: uppercase;
+  background-color: #333;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  border: 1px solid white;
+}
+
+div#letters ul li a.selected {
+  background-color: skyblue;
+}

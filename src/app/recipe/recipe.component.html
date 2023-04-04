@@ -1,0 +1,23 @@
+<app-recipe-navigation></app-recipe-navigation>
+<h3>{{ recipe?.strMeal }}</h3>
+<section>
+  <article id="ingredients">
+    <h4>Ingredients:</h4>
+    <ul>
+      <li *ngFor="let ingredient of ingredients">
+        {{ ingredient.name }} - {{ ingredient.amount }}
+      </li>
+    </ul>
+  </article>
+
+  <article id="instructions">
+    <section>
+      <p>
+        {{ recipe?.strInstructions || "" | splitOnPeriod }}
+      </p>
+    </section>
+    <div style="background-image: url('{{ recipe?.strMealThumb }}')"></div>
+    <br />
+    <app-error></app-error>
+  </article>
+</section>
