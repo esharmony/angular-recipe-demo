@@ -1,7 +1,5 @@
 div {
-  flex: 1;
   height: 200px;
-  width: 200px;
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,7 +17,10 @@ article#instructions {
   display: flex;
   justify-content: space-between;
   min-width: 250px;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
+}
+article#instructions div {
+  width: 100%;
 }
 section {
   display: flex;

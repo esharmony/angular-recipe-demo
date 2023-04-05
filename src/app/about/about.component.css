@@ -8,3 +8,7 @@ section {
 article {
   margin: 0 64px 32px 0;
 }
+
+a {
+  color: #333;
+}

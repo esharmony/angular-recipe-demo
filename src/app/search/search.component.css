@@ -39,7 +39,7 @@ li {
   padding: 0.5rem;
   box-sizing: border-box;
   text-decoration: none;
-  color: black;
+  color: #333;
 }
 
 .search-result li a:hover {

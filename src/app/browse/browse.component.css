@@ -1,17 +1,22 @@
 .browse-result {
-  width: 100%;
-  justify-content: space-between;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 16px;
+  margin: 16px 16px;
+  flex-flow: row wrap;
+  gap: 16px;
 }
 
 li {
-  min-width: 250px;
-  padding: 10px;
+  padding: 8px 0 8px 8px;
   background-color: #d7eff9;
-  margin: 16px 16px;
+  margin: 16px 0;
+  width: calc(33.333% - 24px);
+}
+
+@media only screen and (max-width: 600px) {
+  li {
+    width: 100%;
+  }
 }
 
 li a {

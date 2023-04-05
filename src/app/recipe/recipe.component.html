@@ -11,12 +11,13 @@
   </article>
 
   <article id="instructions">
+    <div style="background-image: url('{{ recipe?.strMealThumb }}')"></div>
     <section>
       <p>
         {{ recipe?.strInstructions || "" | splitOnPeriod }}
       </p>
     </section>
-    <div style="background-image: url('{{ recipe?.strMealThumb }}')"></div>
+
     <br />
     <app-error></app-error>
   </article>
